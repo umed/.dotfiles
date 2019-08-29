@@ -25,4 +25,3 @@ set number
 syntax on
 colorscheme onedark
 set laststatus=2
-
