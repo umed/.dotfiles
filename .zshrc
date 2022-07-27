@@ -39,5 +39,6 @@ alias nuter_psql="PGCONNECT_TIMEOUT=2 nuter psql"
 PROMPT=${PROMPT/\%c/\%~}
 
 alias vim="nvim"
+alias v="nvim"
 
 alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
