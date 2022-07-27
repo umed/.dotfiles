@@ -28,3 +28,9 @@ dotfiles config --local status.showUntrackedFiles no
 
 dotilfes checkout # checkout files into home directory
 ```
+
+## Prerequisites
+
+```
+brew install --cask font-hack-nerd-font
+```
