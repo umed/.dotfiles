@@ -13,7 +13,7 @@ dotfiles config --local status.showUntrackedFiles no
 
 ```sh
 cd $HOME
-git clone --bare https://github.com/umed/dotfiles.git .dotfiles
+git clone --bare https://github.com/umed/home.git .dotfiles
 
 alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 dotfiles config --local status.showUntrackedFiles no
