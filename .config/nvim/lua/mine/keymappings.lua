@@ -9,8 +9,14 @@ nmap({ '<Leader><Leader>', cmd('lua ReloadConfig()<CR>'), opts(nnoremap, silent)
 
 nmap({ '<Leader>p', cmd(':BufferLineCyclePrev'), opts(nnoremap, silent) })
 nmap({ '<Leader>n', cmd(':BufferLineCycleNext'), opts(nnoremap, silent) })
+nmap({ '<Leader>q', cmd(':bd'), opts(nnoremap, silent) })
 
 nmap({ '<c-P>', cmd('lua require("fzf-lua").files()<CR>'), opts(nnoremap, silent) })
 
 nmap({ '<c-N>', cmd(':NvimTreeToggle'), opts(nnoremap, silent) })
 nmap({ '<Leader>m', cmd(':NvimTreeFindFile'), opts(nnoremap, silent) })
+
+
+nmap ({ '<leader><c-t>', cmd(':ToggleTerm'), opts(nnoremap) })
+tmap ({ '<leader><c-t>', cmd(':ToggleTerm'), opts(nnoremap) })
+tmap ({ '<Esc>', '<C-\\><c-n>', opts(nnoremap) })

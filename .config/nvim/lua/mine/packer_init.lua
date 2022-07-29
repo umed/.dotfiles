@@ -49,9 +49,13 @@ return packer.startup(function(use)
   use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
 
   -- Tools
+  use 'nvim-treesitter/nvim-treesitter'
+  use 'lukas-reineke/indent-blankline.nvim'
+  use 'bfrg/vim-cpp-modern'
   use { 'ibhagwan/fzf-lua', requires = { 'kyazdani42/nvim-web-devicons' } }
   use 'jremmen/vim-ripgrep'
   use 'neovim/nvim-lspconfig'
+  use { 'akinsho/toggleterm.nvim', tag = 'v2.*', config = function() require("toggleterm").setup() end }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
