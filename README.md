@@ -21,7 +21,7 @@ xargs -I{} mv {} .config-backup/{}
 Then the magic
 ```sh
 cd $HOME
-git clone --bare https://github.com/umed/home.git .dotfiles
+git clone --bare https://github.com/umed/.dotfiles.git .dotfiles
 
 alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 dotfiles config --local status.showUntrackedFiles no
