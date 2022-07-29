@@ -26,7 +26,7 @@ git clone --bare https://github.com/umed/home.git .dotfiles
 alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 dotfiles config --local status.showUntrackedFiles no
 
-dotilfes checkout # checkout files into home directory
+dotfiles checkout # checkout files into home directory
 ```
 
 ## Prerequisites
