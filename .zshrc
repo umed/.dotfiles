@@ -1,6 +1,6 @@
 export PATH=/Library/Frameworks/Python.framework/Versions/3.7/bin:$PATH
 
-export ZSH="/Users/umed/.oh-my-zsh"
+export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="agnoster"
 
@@ -35,10 +35,10 @@ cc() {
 
 test -n "$ALACRITTY_LOG" && printf "\e[?1042l"
 
-alias nuter_psql="PGCONNECT_TIMEOUT=2 nuter psql"
-PROMPT=${PROMPT/\%c/\%~}
+# PROMPT=${PROMPT/\%c/\%~}
 
 alias vim="nvim"
 alias v="nvim"
+alias vconf="cd $HOME/.config/nvim && nvim"
 
 alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
