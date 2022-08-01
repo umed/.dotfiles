@@ -162,3 +162,10 @@ cmp.setup {
     { name = 'luasnip' },
   },
 }
+
+vim.cmd [[
+    augroup clang_format
+        autocmd!
+        autocmd BufWritePre,FileWritePre lua vim.lsp.buf.formatting()
+    augroup END
+]]
