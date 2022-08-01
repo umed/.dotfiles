@@ -1,6 +1,6 @@
-export PATH=/Library/Frameworks/Python.framework/Versions/3.7/bin:$PATH
+export PATH="$HOME/.bin:/usr/local/sbin:/Library/Frameworks/Python.framework/Versions/3.7/bin:$PATH"
 
-export ZSH=$HOME/.oh-my-zsh
+export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="agnoster"
 
