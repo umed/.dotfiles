@@ -54,7 +54,6 @@ return packer.startup(function(use)
     use 'bfrg/vim-cpp-modern'
 
     use { 'ibhagwan/fzf-lua', requires = { 'kyazdani42/nvim-web-devicons' } }
-    use 'jremmen/vim-ripgrep'
     use { 'akinsho/toggleterm.nvim', tag = 'v2.*', config = function() require("toggleterm").setup() end }
 
     use 'neovim/nvim-lspconfig'

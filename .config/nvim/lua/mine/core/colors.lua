@@ -13,4 +13,17 @@ require('lualine').setup {
   }
 }
 
-require("bufferline").setup{}
+require("bufferline").setup{
+    options = {
+        offsets = {
+            {
+                filetype = "NvimTree",
+                text = function()
+                    return vim.loop.cwd()
+                    -- return vim.fn.getcwd()
+                end,
+                highlight = "Directory",
+            }
+        }
+    }
+}

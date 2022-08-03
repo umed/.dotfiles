@@ -21,7 +21,8 @@ nmap({ '<leader>k', '<C-w>k', noremap_silent_opts })
 nmap({ '<leader>l', '<C-w>l', noremap_silent_opts })
 nmap({ '<leader><esc>', '<c-w>q', noremap_silent_opts })
 
-nmap({ '<c-P>', cmd('lua require("fzf-lua").files()<CR>'), noremap_silent_opts })
+nmap({ '<c-P>', cmd('FzfLua files<CR>'), noremap_silent_opts })
+nmap({ '<c-f>', cmd('FzfLua grep_project<CR>'), noremap_silent_opts })
 
 nmap({ '<c-N>', cmd(':NvimTreeToggle'), noremap_silent_opts })
 nmap({ '<Leader>m', cmd(':NvimTreeFindFile'), noremap_silent_opts })
