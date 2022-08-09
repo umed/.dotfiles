@@ -1,4 +1,4 @@
-export PATH="$HOME/.bin:/usr/local/sbin:/Library/Frameworks/Python.framework/Versions/3.7/bin:$PATH"
+export PATH="$HOME/bin:$HOME/.bin:/usr/local/sbin:/Library/Frameworks/Python.framework/Versions/3.7/bin:$PATH"
 
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -12,7 +12,7 @@ COMPLETION_WAITING_DOTS="true"
 
 plugins=(git)
 
-plugins+=(zsh-vi-mode)
+# plugins+=(zsh-vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -40,5 +40,9 @@ test -n "$ALACRITTY_LOG" && printf "\e[?1042l"
 alias vim="nvim"
 alias v="nvim"
 alias vconf="cd $HOME/.config/nvim && nvim"
+
+if ! command -v bat > /dev/null; then
+    alias bat="batcat"
+fi
 
 alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
