@@ -19,6 +19,8 @@ vim.opt.mouse = 'a'
 vim.opt.colorcolumn = '120'
 vim.opt.splitright = true
 
+vim.opt.signcolumn = 'yes'
+vim.opt.clipboard:append { 'unnamed', 'unnamedplus' }
 -- vim.opt.directory = cache_dir .. 'swag/'
 -- vim.opt.undodir = cache_dir .. 'undo/'
 -- vim.opt.backupdir = cache_dir .. 'backup/'

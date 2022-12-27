@@ -1,5 +1,4 @@
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 local cmp = require 'cmp'
 
@@ -49,6 +48,13 @@ function on_attach(client, bufnr)
     vim.keymap.set('n', '<space>ca', vim.lsp.buf.code_action, bufopts)
     vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
     vim.keymap.set('n', '<space>f', vim.lsp.buf.formatting, bufopts)
+
+    require "lsp_signature".on_attach({
+        bind = true,
+        handler_opts = {
+            border = "rounded"
+        }
+    }, bufnr)
 end
 
 require("clangd_extensions").setup {

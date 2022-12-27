@@ -42,12 +42,25 @@ return packer.startup(function(use)
     }
 
     -- UI
-    use 'navarasu/onedark.nvim'
+    use 'folke/tokyonight.nvim'
+    -- use 'navarasu/onedark.nvim'
+    -- use 'ray-x/aurora'
 
-    use { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } }
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    }
 
-    use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
+    use {
+        'romgrk/barbar.nvim',
+        requires = {'kyazdani42/nvim-web-devicons'}
+    }
+
+    -- use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
+
     use {'glepnir/dashboard-nvim'}
+
+    use 'mhinz/vim-signify'
 
     -- Tools
     use 'nvim-treesitter/nvim-treesitter'
@@ -63,6 +76,9 @@ return packer.startup(function(use)
     use 'saadparwaiz1/cmp_luasnip'
     use 'L3MON4D3/LuaSnip'
     use 'p00f/clangd_extensions.nvim'
+    use 'JoosepAlviste/nvim-ts-context-commentstring'
+    use 'ray-x/lsp_signature.nvim'
+
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if packer_bootstrap then

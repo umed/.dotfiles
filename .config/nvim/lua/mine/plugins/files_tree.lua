@@ -7,7 +7,7 @@ require("nvim-tree").setup({
         custom = {
             '^.git$',
             '^.cache$',
-            'compile_commands.json'
+            'compile_commands.json',
         }
     },
     update_focused_file = {
